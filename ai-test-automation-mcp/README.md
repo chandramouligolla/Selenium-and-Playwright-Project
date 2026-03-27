@@ -1,3 +1,151 @@
+# Enterprise Test Automation Framework (Selenium + Playwright + MCP + CI/CD)
+
+## Overview
+
+This is an enterprise-grade hybrid test automation framework built using Selenium, Playwright, PyTest, BDD (Behave), REST API testing, and MCP (Model Context Protocol) for AI-assisted test generation.
+
+The framework is designed to support:
+
+* UI Automation (Selenium + Playwright)
+* API Automation (PyTest + Requests + Playwright API)
+* BDD Automation (Gherkin + Behave)
+* Performance Testing (Locust)
+* AI Test Generation using MCP
+* CI/CD Integration using GitHub Actions
+
+---
+
+## Tech Stack
+
+| Category            | Tools Used                                       |
+| ------------------- | ------------------------------------------------ |
+| UI Automation       | Selenium WebDriver (Python), Playwright (Python) |
+| API Automation      | PyTest, Requests, JSON Validation                |
+| BDD                 | Behave (Gherkin)                                 |
+| Framework Design    | Page Object Model (POM), Data Driven             |
+| Performance Testing | Locust                                           |
+| AI Integration      | MCP (Model Context Protocol)                     |
+| CI/CD               | GitHub Actions                                   |
+| Reporting           | Allure Reports                                   |
+| Programming         | Python                                           |
+
+---
+
+## Project Structure
+
+```
+ai-test-automation-mcp/
+│
+├── pages/                      # Page Object Model
+├── tests/                      # Test Cases (UI + API + DB)
+├── features/                   # BDD Feature Files
+├── steps/                      # Step Definitions
+├── performance/locust/         # Performance Tests
+├── mcp/                        # MCP Integration
+├── .github/workflows/          # CI/CD Pipeline
+├── requirements.txt
+├── conftest.py
+└── README.md
+```
+
+---
+
+## Key Features
+
+✔ Hybrid Automation Framework (Selenium + Playwright)
+✔ Page Object Model Design Pattern
+✔ BDD Framework using Behave
+✔ REST API Automation using PyTest
+✔ AI Test Generation using MCP
+✔ Performance Testing using Locust
+✔ CI/CD Pipeline using GitHub Actions
+✔ Reusable Framework Architecture
+
+---
+
+## Sample Test Scenarios Covered
+
+* Login functionality testing (UI automation)
+* Dashboard validation (Playwright automation)
+* REST API validation (status code + JSON validation)
+* Database validation using Python
+* Performance testing using Locust
+* AI-generated test cases using MCP
+
+---
+
+## How to Run the Project
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Selenium tests
+
+```bash
+pytest tests/ui
+```
+
+### Run Playwright tests
+
+```bash
+pytest tests/playwright
+```
+
+### Run API tests
+
+```bash
+pytest tests/api
+```
+
+### Run BDD tests
+
+```bash
+behave features
+```
+
+### Run Performance tests
+
+```bash
+locust -f performance/locust/locustfile.py
+```
+
+---
+
+## CI/CD Pipeline
+
+This framework is fully integrated with GitHub Actions.
+
+Every push automatically:
+
+* installs dependencies
+* runs UI tests
+* runs API tests
+* generates reports
+
+---
+
+## About Me
+
+I am an SDET with 4+ years of experience in test automation using Selenium, Playwright, Python, and API testing.
+
+GitHub: https://github.com/chandramouligolla
+LinkedIn: https://linkedin.com/in/gollachandramouli
+
+---
+
+## Future Improvements
+
+* Docker support
+* Parallel execution using PyTest-xdist
+* Visual regression testing
+* AI-based defect prediction
+
+
+
+#############    version 2      ####################
 # 🤖 AI-Powered Test Automation Framework with MCP Integration
 
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -262,3 +410,6 @@ Push to Feature Branch
 ## 📄 License
 
 MIT License — feel free to use, fork, and contribute.
+
+
+
